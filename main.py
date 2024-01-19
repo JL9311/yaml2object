@@ -1,45 +1,3 @@
-# yaml-to-object
-
-#### 介绍
-- 将yaml转化为对象
-- 将json配置文件转化为对象
-
-#### 使用说明
-
-示例main.py中，我有两个配置文件，一个是yaml格式的，一个是json格式的，我需要将这两个配置文件转化为对象，然后使用对象的属性。
-
-
-application.json
-
-```json lines
-{
-  "llm": {
-    "api_key": "12jk3k12298890xscjk2c88234",
-    "model": "glm-4"
-  },
-  "auth": {
-    "access_token": "12jk3k12298890xscjk2c88234",
-    "refresh_token": "12jk3k12298890xscjk2c88234"
-  }
-}
-
-```
-
-application.yaml
-
-```yaml lines
-server:
-  port: 8080
-  name: yaml2object
-  host: 0.0.0.0
-  version: 1.0.0
-
-
-```
-main.py
-
-```python
-# 这是一个示例 Python 脚本。
 from config_reader import field, yaml_to_object, json_to_object
 
 
@@ -105,18 +63,3 @@ if __name__ == '__main__':
     print(json_config.api_key)
     print(json_config.access_token)
     print(json_config.refresh_token)
-
-```
-
-#### 输出结果
-
-```text
-yaml2object
-1.0.0
-8080
-0.0.0.0
-glm-4
-12jk3k12298890xscjk2c88234
-12jk3k12298890xscjk2c88234
-12jk3k12298890xscjk2c88234
-```

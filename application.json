@@ -1,0 +1,10 @@
+{
+  "llm": {
+    "api_key": "12jk3k12298890xscjk2c88234",
+    "model": "glm-4"
+  },
+  "auth": {
+    "access_token": "12jk3k12298890xscjk2c88234",
+    "refresh_token": "12jk3k12298890xscjk2c88234"
+  }
+}

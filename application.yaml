@@ -1,0 +1,5 @@
+server:
+  port: 8080
+  name: yaml2object
+  host: 0.0.0.0
+  version: 1.0.0
